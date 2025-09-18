@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+[data-theme="dark"] {
+  --body-bg: linear-gradient(to bottom, #0e1995, #080C35);
+  --primary: #0B1368;
+
+  @apply text-white;
+}
+
+[data-theme="light"] {
+  --body-bg: white;
+  --primary: #ffffff;
+
+  @apply text-black;
+}
+
+@theme inline {
+  --color-surface: var(--primary);
+  --color-primary: var(--primary);
+}
+
+html, body {
+  @apply min-h-screen ;
+}
+
+body {
+  background: var(--body-bg);
+}

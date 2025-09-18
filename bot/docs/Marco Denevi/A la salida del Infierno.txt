@@ -1,0 +1,4 @@
+<p>-Dante: Adiós, dulce maestro.</p>
+<p>-Virgilio: ¡Cómo! ¿Y el Purgatorio? ¿Y el Paraíso?</p>
+<p>-Dante: ¡Para qué! Quien conoció el Infierno ya no tiene ningún interés en el Purgatorio. Y respecto al Paraíso, sabe que es la ausencia de infierno.</p>
+<p style="text-align: center;">FIN</p>

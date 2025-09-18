@@ -1,0 +1,6 @@
+<p class="Default" style="text-indent: 0in; margin-left: 0in;">Ningún robot causará daño a un ser humano o permitirá, con su inacción, que un ser humano resulte dañado.</p>
+<p class="Default" style="text-indent: 0in; margin-left: 0in;">Todo robot obedecerá las órdenes recibidas de los seres humanos, excepto cuando esas órdenes puedan entrar en contradicción con la primera ley.</p>
+<p class="Default" style="text-indent: 0in; margin-left: 0in;">Todo robot debe proteger su propia existencia, siempre y cuando esta protección no entre en contradicción con la primera o la segunda ley.</p>
+<p class="Default" style="text-indent: 0in; margin-left: 0in;" align="center">FIN</p>
+<hr>
+<p class="Default" style="text-indent: 0in; margin-left: 0in; text-align: right;"><span style="font-size: 10px;">“The Three Laws of Robotics”</span></p>

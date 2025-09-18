@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "epub2": "^3.0.2",
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.55.0",
+    "selenium-webdriver": "^4.35.0",
+    "typescript": "^5.9.2"
+  },
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Public domain doc scraper",
+  "main": "doc-scraper-bot.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/selenium-webdriver": "^4.1.28"
+  }
+}
