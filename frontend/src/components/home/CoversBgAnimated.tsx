@@ -1,212 +1,239 @@
 'use client';
 
-import {LayoutGroup, motion, useAnimationControls, useMotionValue, useScroll, useSpring} from "framer-motion";
-import {Ref, RefObject, useEffect, useRef, useState} from "react";
+import {LayoutGroup, motion, useAnimationControls} from "framer-motion";
+import {useEffect, useState} from "react";
 import clsx from "clsx";
+import {loremIpsum} from "@/utils/utils";
+import {DocumentType} from "@/stores/types";
+import useDocSearchStore from "@/stores/useDocSearchStore";
 
-type Cover = {
-    title: string;
-    src: number;
-    h: number;
-    x: number;
-    y: number;
-}
-
-const boxCount = 100
-
-const covers: Cover[] = Array.from({length: boxCount}).map(() => {
-    const src = Math.random() * 1000
-    const h = 10 + Math.random() * 20
-    const x = Math.random() * 1000
-    const y = Math.random() * 1000
-    const title = "Very very long title"
-    return {title, src, h, x, y}
-});
+const COVERS_COUNT = 100
+const FLOATING_COVERS = 12
 
 function DocumentGenrePicker() {
-    return <div className={"flex gap-2 opacity-50 flex-col items-end "}>
-        <p>Novela</p>
-        <p>Teatro</p>
-        <p>Poesía</p>
-        <p>Cuento corto</p>
-        <p>Fiction</p>
+    return <div className={"flex flex-col gap-10"}>
+            <p>Novela</p>
+            <p className={"opacity-40"}>Teatro</p>
+            <p className={"opacity-40"}>Poesía</p>
+            <p className={"opacity-40"}>Cuento corto</p>
     </div>;
 }
 
 function DocumentTypePicker() {
-    return <p className={"w-30 text-3xl font-serif opacity-20"}>Fiction</p>;
+    return <div className={"flex flex-col gap-40"}>
+        <div className={"flex flex-col gap-10"}>
+            <p className={"cursor-pointer"}>
+                Fiction
+            </p>
+            <p className={"opacity-40 cursor-pointer"}>
+                Non fiction
+            </p>
+        </div>
+        <DocumentGenrePicker/>
+    </div>
 }
 
+function SelectedDocumentViewer() {
+    const [docsStack, setDocsStack] = useState<(DocumentType & { _instanceId: string })[]>([]);
+    const selectedDoc = useDocSearchStore().selectedDoc;
+
+    useEffect(() => {
+        if (selectedDoc != null) {
+            setDocsStack(d => {
+                const entry = { ...selectedDoc, _instanceId: crypto.randomUUID() };
+                const next = [...d, entry];
+                return next.slice(-7);
+            });
+        }
+    }, [selectedDoc]);
+
+    return selectedDoc != null && <div className={"flex relative items-end w-fit p-10 flex-col gap-10 shrink-0 h-fit  "}>
+        {
+            docsStack.map((doc, index) => {
+                const position = docsStack.length - index;
+
+                return index < docsStack.length - 1 && <motion.img
+                        key={doc._instanceId}
+                        src={doc.src}
+                        animate={{x: position * 20, opacity: 1.2 - position / docsStack.length}}
+                        transition={{duration: 0.7, ease: 'easeOut'}}
+                        className={`w-40 absolute`}
+                    />
+            })
+        }
+
+        <motion.img
+            className={"w-40 border z-10"}
+            src={selectedDoc.src}
+        />
+
+        <p className={"font-serif w-40 text-justify"}>{selectedDoc.title}</p>
+    </div>
+}
 
 export default function CoversBgAnimated() {
     const [floating, setFloating] = useState(true);
-    const [inView, setInView] = useState(false);
-    const ref = useRef<HTMLDivElement>(null);
+    const [covers, setCovers] = useState<DocumentType[]>([]);
 
     useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY === 0 && !floating) {
-                setFloating(true);
-            } else if (window.scrollY > 0 && floating) {
-                setFloating(false);
-            }
+        const generated = Array.from({ length: COVERS_COUNT }).map((value, index, array) => {
+            const src = `https://picsum.photos/id/${Math.round(Math.random()*1000)}/200/300`;
+            const h = 10 + Math.random() * 200;
+            const x = Math.random() * 1000;
+            const y = Math.random() * 1000;
+            const title = loremIpsum(4);
+            return {id: index, title, src, h, x, y };
+        });
 
-            setInView(window.scrollY >= window.innerHeight);
-        };
+        setCovers(generated);
+    }, []);
 
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
+    useEffect(() => {
+        // const threshold = window.innerHeight / 4;
+        //
+        // const onScroll = () => {
+        //     if (window.scrollY <= threshold && !floating) {
+        //         setFloating(true);
+        //     } else if (window.scrollY > threshold && floating) {
+        //         setFloating(false);
+        //     }
+        // };
+        //
+        // window.addEventListener("scroll", onScroll);
+        // return () => window.removeEventListener("scroll", onScroll);
     }, [floating]);
 
-    return (
-        <>
-            <LayoutGroup>
+    return <LayoutGroup>
                 <div className="h-screen w-full absolute top-0">
                     {
                         covers.map((c, i) => {
-                            if (i < 10)
-                                return <FloatingCover key={i} floating={floating} c={c} i={i}/>;
-
+                            if (i < FLOATING_COVERS) return <FloatingCover key={i} floating={floating} c={c} i={i}/>;
                         })
                     }
                 </div>
-                <div className="border flex justify-around  ">
-                    <div className={clsx("h-screen sticky top-0 flex justify-between items-center shrink-0 w-fit")}>
+                <div className="flex justify-around">
+                    <div className={"h-screen sticky top-0 flex justify-center items-center w-full"}>
                         <DocumentTypePicker />
                     </div>
-                    <DocumentGrid windowRef={ref} floating={floating} />
-                    <div className={"h-screen sticky top-0 flex justify-between items-center w-fit"}>
-                        <DocumentGenrePicker />
-                        <div ref={ref} className={"h-1/2 absolute -left-[87vw] w-screen flex justify-between items-center border-orange-500 border"}></div>
+                    <DocumentGrid covers={covers} floating={floating} />
+                    <div className={"h-screen sticky top-0 flex w-full items-center justify-center"}>
+                        <SelectedDocumentViewer />
                     </div>
                 </div>
-            </LayoutGroup>
-        </>
-    )
+             </LayoutGroup>;
 }
 
-function DocumentGrid({floating, windowRef}: { floating: boolean, windowRef: RefObject<HTMLDivElement | null> }) {
-    const parentRef = useRef<HTMLDivElement>(null);
-    const [halfHeight, setHalfHeight] = useState<number | undefined>(undefined);
-    const row = useMotionValue(0)
-
-    useEffect(() => {
-        const onScroll = () => {
-            row.set(-window.scrollY);
-        };
-
-        window.addEventListener("scroll", onScroll, { passive: false });
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
-
-    useEffect(() => {
-        if (parentRef.current) {
-            const height = parentRef.current.scrollHeight;
-            setHalfHeight(height / 2);
-        }
-    }, []);
-
-    return <div
-        ref={parentRef}
-        className="pl-25 grid gap-x-20 gap-y-20 grid-cols-3 grid-flow-row w-fit relative"
-        style={halfHeight ? { height: halfHeight } : {}}
-    >
+function DocumentGrid({covers, floating}: {covers: DocumentType[], floating: boolean}) {
+    return <div className="columns-3 gap-40">
         {
             covers.map((c, i) => (
-                <motion.div key={i} style={{y: row}} transition={{duration: 0.3}} >
-                    <Document parentRef={windowRef} cover={c} index={i}/>
-                </motion.div>
+                <Document key={i} cover={c} index={i} floating={floating}/>
             ))
         }
     </div>;
 }
 
-function Document({parentRef, cover, index}: {
-    parentRef: RefObject<HTMLDivElement | null>,
-    cover: Cover,
-    index: number,
-}) {
-    const ref = useRef<HTMLDivElement>(null)
-    const [isInside, setIsInside] = useState(false)
+function Document({ cover, index, floating}: { cover: DocumentType,index: number, floating: boolean }) {
+    const setSelectedDoc = useDocSearchStore().setSelectedDoc
+
+    const showCover = (!floating && index < FLOATING_COVERS) || index >= FLOATING_COVERS;
+    const [returnDuration, setReturnDuration] = useState(1);
+    const [width, setWidth] = useState(5);
+
 
     useEffect(() => {
-        if (!parentRef.current || !ref.current) return;
+        setReturnDuration(1 + Math.random() * 2);
+        setWidth(3 + Math.random() * 3)
+    }, []);
 
-        const observer = new IntersectionObserver(
-            ([entry]) => setIsInside(entry.isIntersecting),
-            {root: parentRef.current}
-        );
-
-        observer.observe(ref.current);
-        return () => observer.disconnect();
-    }, [parentRef]);
-
-    return <div className={"flex gap-10"} key={index} ref={ref}>
-        <motion.img
-            layoutId={"box-" + index}
-            className={clsx(`shrink-0 w-30`, isInside ? '' : 'opacity-20')}
-            whileHover={{border: "white bottom 2px solid", cursor: "pointer", scale: 1.02}}
-            src={`https://picsum.photos/200/300?random=${cover.src}`}
-        />
-
-        {isInside && <div className="flex flex-col justify-end w-30 h-full">
-            <p className={"font-serif  w-30"}>{cover.title}</p>
-        </div>}
-    </div>
-}
-
-function FloatingCover({floating, c, i}: { floating: boolean, c: Cover, i: number }) {
-    const controls = useAnimationControls();
-
-    const variants = {
-        initial: {x: c.x, y: c.y},
-        animate: {x: `${100 * Math.random()}vw`, y: `${100 * Math.random()}vh`}
+    const handleOnHoverStart = () => {
+        setSelectedDoc(cover);
     }
 
+    const handleOnHoverEnd = () => {
+       // setSelectedDoc(null);
+    }
+
+    return <motion.div className={"flex cursor-pointer break-inside-avoid mt-40 "} onHoverStart={handleOnHoverStart} onHoverEnd={handleOnHoverEnd}>
+       {
+            showCover && <motion.img
+                layoutId={"box-" + index}
+                style={{ width: `${width}em`, height: `${width*3/2}em` }}
+                className={`shrink-0 shadow-xl  h-auto outline outline-primary`}
+                src={cover.src}
+                whileInView={{opacity: 1}}
+                viewport={{amount: 1}}
+                transition={{duration: returnDuration, ease: "easeOut"}}
+           />
+       }
+
+       {
+            !showCover && <motion.img
+                style={{ width: `${width}em`, height: `${width*3/2}em` }}
+                src={cover.src}
+            />
+       }
+
+        <div className="flex flex-col w-30 h-full">
+            <p className={"font-serif w-30 text-justify"}>{cover.title}</p>
+        </div>
+    </motion.div>
+}
+
+function FloatingCover({floating, c, i}: { floating: boolean, c: DocumentType, i: number }) {
+    const controls = useAnimationControls();
+    const [target, setTarget] = useState({x: 0, y: 0});
     const [showTitle, setShowTitle] = useState(false);
+    const [scale, setScale] = useState(1);
+    const [returnDuration, setReturnDuration] = useState(1);
 
     useEffect(() => {
-        controls.start("animate")
-    }, []);
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        const scale = 0.5 + Math.random() * 0.5;
+        const returnDuration = 1 + Math.random() * 2;
+
+        setTarget({x, y});
+        setScale(scale);
+        setReturnDuration(returnDuration);
+
+        (async () => await controls.start("animate"))()
+    }, [controls]);
+
+    const variants = {
+        initial: { x: c.x, y: c.y },
+        animate: { x: target.x, y: target.y },
+        hover: {scale: 1, duration: 0.5 },
+    };
 
     const handleOnHoverStart = () => {
         controls.stop();
         setShowTitle(true);
     }
 
-    const handleOnHoverEnd = () => {
+    const handleOnHoverEnd = async () => {
         setShowTitle(false);
-        controls.start("animate")
+        await controls.start("animate");
     }
 
     return <motion.div
-        key={i}
-        className={"h-[20vh] w-[7vw] absolute"}
-        // initial={{x: size.x * Math.random(), y: size.y  * Math.random() }}
-        // animate={{x: size.x * Math.random(), y: size.y  * Math.random() }}
+        className={clsx("h-[20vh] w-[7vw] absolute hover:cursor-pointer opacity-70 hover:opacity-100 hover:z-[1000]", floating ? "" : 'pointer-events-none')}
         initial={"initial"}
         variants={variants}
         animate={controls}
         transition={{duration: 200, repeat: Infinity, repeatType: "reverse"}}
-        whileHover={{zIndex: 1000}}
         onHoverStart={handleOnHoverStart}
         onHoverEnd={handleOnHoverEnd}
+        style={{scale}}
+        whileHover={"hover"}
     >
         {
             floating && <motion.img
+                transition={{duration: returnDuration, ease: "easeOut"}}
                 layoutId={"box-" + i}
-                animate={{width: "7vw", height: "20vh", opacity: 0.5}}
-                className="h-32 w-20"
-                whileHover={{opacity: 1}}
-                src={`https://picsum.photos/200/300?random=${c.src}`}
+                src={c.src}
             />
         }
-
-        {/*<motion.img*/}
-        {/*    layoutId={"box-"+i}*/}
-        {/*    src={`https://picsum.photos/200/300?random=${c.src}`}*/}
-        {/*/>*/}
-
-        {showTitle && <p className={"flex justify-between"}>{i}. <span className={"text-end"}>{c.title}</span></p>}
+        {showTitle && <p className={"flex justify-between font-serif"}>{i}. <span className={"ml-5 text-end font-serif"}>{c.title}</span></p>}
     </motion.div>
 }

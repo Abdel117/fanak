@@ -22,7 +22,7 @@ export function HeroSection() {
                     <p className={"w-50 z-10 "}>
                         Short open source documents to read on the go
                     </p>
-                    <READ className={"z-10 shadow-inner"}/>
+                    <READ className={"z-10"}/>
                     {/*<p className={"z-10 hover:underline border py-2 bg-white text-primary cursor-pointer h-fit "}>TRY TEST</p>*/}
                 </div>
             </div>
