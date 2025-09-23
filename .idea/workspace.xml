@@ -5,26 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd72c67f-9150-4b15-9578-462b074f8549" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fanak-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/stores/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/motion/PixeledImage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/READ.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/READ.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/covers/1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/covers/1.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/covers/2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/covers/2.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/covers/3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/covers/3.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/covers/4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/covers/4.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/covers/5.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/covers/5.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/covers/6.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/covers/6.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/fanak-img.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/fanak-iso.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/pg/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/pg/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +50,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Node.js.cathegorize.ts.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.ciudadseva-scraper.ts.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.doc-scraper-bot.ts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
@@ -138,7 +126,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
       </set>
     </attachedChunks>
   </component>
@@ -167,7 +155,10 @@
       <workItem from="1758404886340" duration="3346000" />
       <workItem from="1758450482300" duration="4763000" />
       <workItem from="1758470784842" duration="3883000" />
-      <workItem from="1758475485553" duration="10832000" />
+      <workItem from="1758475485553" duration="11052000" />
+      <workItem from="1758559205669" duration="1406000" />
+      <workItem from="1758563277178" duration="4025000" />
+      <workItem from="1758615287431" duration="10714000" />
     </task>
     <servers />
   </component>
