@@ -4,7 +4,7 @@ import {shuffle} from "@/utils/utils";
 import {motion} from "framer-motion";
 import clsx from "clsx";
 
-type PixeledImageProps = {
+type PixelatedImageProps = {
     src: string,
     rows: number,
     cols: number,
@@ -12,7 +12,7 @@ type PixeledImageProps = {
     className?: string
 }
 
-export default function PixeledImage({src, rows, cols, pixelSize, className}: PixeledImageProps) {
+export default function PixelatedImage({src, rows, cols, pixelSize, className}: PixelatedImageProps) {
     const pixeles = Array.from({length: rows*cols}).map((_, i) => i);
     shuffle(pixeles);
 
@@ -22,7 +22,7 @@ export default function PixeledImage({src, rows, cols, pixelSize, className}: Pi
                 width: cols * pixelSize,
                 height: rows * pixelSize,
             }}
-            className={clsx("relative  flex flex-wrap", className)}
+            className={clsx("flex flex-wrap", className)}
         >
             {
                 pixeles.map((val, i) => (

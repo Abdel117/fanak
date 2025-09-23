@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 import clsx from "clsx";
 import {DocumentType} from "@/stores/types";
 import useDocSearchStore, {FLOATING_COVERS} from "@/stores/useDocSearchStore";
-import PixeledImage from "@/components/motion/PixeledImage";
+import PixelatedImage from "@/components/motion/PixelatedImage";
 
 function DocumentGenrePicker() {
     return <div className={"flex flex-col gap-10"}>
@@ -44,7 +44,7 @@ function SelectedDocumentViewer() {
         }
     }, [selectedDoc]);
 
-    return selectedDoc != null && <div className={"flex relative items-end w-fit p-10 flex-col gap-10 shrink-0 h-fit  "}>
+    return selectedDoc != null && <div className={"flex relative items-end w-fit p-10 flex-col gap-10 shrink-0 h-fit "}>
         {
             docsStack.map((doc, index) => {
                 const position = docsStack.length - index;
@@ -59,9 +59,9 @@ function SelectedDocumentViewer() {
             })
         }
 
-        <PixeledImage
+        <PixelatedImage
             key={selectedDoc.id}
-            className={" z-10"}
+            className={"outline z-10"}
             src={selectedDoc.coverSrc}
             rows={8}
             cols={6}
