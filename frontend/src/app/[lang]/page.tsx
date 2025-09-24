@@ -14,7 +14,6 @@ export default function Home() {
 }
 
 export function HeroSection() {
-
     return (
         <div className={"w-full h-fit relative"}>
             <div className={"w-full h-screen flex flex-col items-center justify-center "}>
@@ -29,7 +28,6 @@ export function HeroSection() {
 
             <CoversBgAnimated/>
         </div>
-
     )
 }
 

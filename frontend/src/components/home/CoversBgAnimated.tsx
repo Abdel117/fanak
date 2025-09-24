@@ -6,6 +6,7 @@ import clsx from "clsx";
 import {DocumentType} from "@/stores/types";
 import useDocSearchStore, {FLOATING_COVERS} from "@/stores/useDocSearchStore";
 import PixelatedImage from "@/components/motion/PixelatedImage";
+import RandomText from "@/components/motion/RandomText";
 
 function DocumentGenrePicker() {
     return <div className={"flex flex-col gap-10"}>
@@ -68,7 +69,8 @@ function SelectedDocumentViewer() {
             pixelSize={30}
         />
 
-        <p className={"font-serif w-40 text-end h-20 "}>{selectedDoc.title}</p>
+        <p className={"font-serif w-40 text-end h-fit"}>{selectedDoc.title}</p>
+        <button className={"border cursor-pointer py-2 px-10"}><RandomText text={"Read"}/></button>
     </div>
 }
 

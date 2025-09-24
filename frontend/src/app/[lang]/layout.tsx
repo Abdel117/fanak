@@ -35,7 +35,7 @@ export default async function RootLayout({
     const dict = await getDictionary(lang);
 
     return (
-        <html lang={lang} data-theme="light">
+        <html lang={lang} data-theme="dark">
             <body className={`${jetMono.className} overflow-x-hidden relative antialiased flex flex-col items-center`}>
                 <I18nProvider lang={lang} dict={dict}>
                     <NavBar />

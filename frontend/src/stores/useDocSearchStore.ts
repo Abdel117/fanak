@@ -28,10 +28,11 @@ const useDocSearchStore = create<DocSearchStore>((set, get, store) => ({
     },
 
     generateDocuments: () => {
-        const docs = Array.from({ length: COVERS_COUNT }).map((_, index) => {
+        const docs = Array.from({ length: COVERS_COUNT }).map((_, id) => {
             const coverSrc = `https://picsum.photos/id/${Math.round(Math.random() * 1000)}/200/300`;
             const title = loremIpsum(4);
-            return { id: index, title, coverSrc };
+            const author = loremIpsum(2);
+            return { id, author, title, coverSrc };
         });
         set({ documents: docs });
     }
