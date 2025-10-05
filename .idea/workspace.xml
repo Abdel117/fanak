@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd72c67f-9150-4b15-9578-462b074f8549" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/motion/RandomText.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentGenrePicker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentGrid.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentSearchSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/HeroSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/SelectedDocumentViewer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/stores/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/FloatingDocumentsBg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/motion/PixelatedImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/motion/PixelatedImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/motion/RandomText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/motion/RandomText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/NavBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +39,12 @@
     &quot;assignee&quot;: &quot;Abdel117&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Abdel117/fanak.git",
-    "accountId": "43c5db87-ef58-4f49-ace7-83b0fe1960f1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Abdel117/fanak.git&quot;,
+    &quot;accountId&quot;: &quot;d3f97e99-a606-4e6c-b6fa-1d1256542191&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -61,7 +65,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "/home/abdel/trabajo/fanak/frontend/src/assets",
+    "last_opened_file_path": "/home/abdel/trabajo/code-crafters",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,7 +73,7 @@
     "nodejs_package_manager_path": "npm",
     "npm.test.executor": "Run",
     "settings.editor.selected.configurable": "web-ide.project.structure",
-    "ts.external.directory.path": "/home/abdel/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/home/abdel/trabajo/fanak/frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -160,6 +164,12 @@
       <workItem from="1758559205669" duration="1406000" />
       <workItem from="1758563277178" duration="4025000" />
       <workItem from="1758615287431" duration="12160000" />
+      <workItem from="1758827808552" duration="2203000" />
+      <workItem from="1758899692362" duration="7232000" />
+      <workItem from="1759171413137" duration="29000" />
+      <workItem from="1759405345573" duration="1033000" />
+      <workItem from="1759422075378" duration="4088000" />
+      <workItem from="1759489212462" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <option name="closed" value="true" />
