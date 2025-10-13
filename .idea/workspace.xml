@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd72c67f-9150-4b15-9578-462b074f8549" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentGenrePicker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentSearchSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/HeroSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/home/SelectedDocumentViewer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/FloatingDocumentsBg.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/motion/PixelatedImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/motion/PixelatedImage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/motion/RandomText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/motion/RandomText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/pg/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/pg/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,30 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.Debug Application.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.cathegorize.ts.executor": "Run",
-    "Node.js.ciudadseva-scraper.ts.executor": "Run",
-    "Node.js.doc-scraper-bot.ts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "/home/abdel/trabajo/code-crafters",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.test.executor": "Run",
-    "settings.editor.selected.configurable": "web-ide.project.structure",
-    "ts.external.directory.path": "/home/abdel/trabajo/fanak/frontend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.cathegorize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.ciudadseva-scraper.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.doc-scraper-bot.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/abdel/trabajo/code-crafters&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.test.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/abdel/trabajo/fanak/frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
@@ -170,6 +162,7 @@
       <workItem from="1759405345573" duration="1033000" />
       <workItem from="1759422075378" duration="4088000" />
       <workItem from="1759489212462" duration="78000" />
+      <workItem from="1760099714321" duration="1291000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <option name="closed" value="true" />

@@ -2,9 +2,16 @@ services:
   mysql:
     image: 'mysql:latest'
     environment:
-      - 'MYSQL_DATABASE=mydatabase'
-      - 'MYSQL_PASSWORD=secret'
-      - 'MYSQL_ROOT_PASSWORD=verysecret'
-      - 'MYSQL_USER=myuser'
+      - 'MYSQL_DATABASE=fanak_db'
+      - 'MYSQL_PASSWORD=admin'
+      - 'MYSQL_ROOT_PASSWORD=admin'
+      - 'MYSQL_USER=admin'
     ports:
       - '3306'
+
+  keycloak:
+    image: 'quay.io/keycloak/keycloak'
+    ports:
+      - '8081'
+    depends_on:
+      - mysql
