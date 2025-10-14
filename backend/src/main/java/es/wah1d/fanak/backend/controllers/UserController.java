@@ -18,4 +18,9 @@ public class UserController {
         return "Estás autenticado como " + user.getUsername();
     }
 
+    public void registerUser(){}
+
+    public void getUser(){}
+
+    public void deleteUser(){}
 }
