@@ -2,7 +2,6 @@
 
 import {useEffect, useState} from "react";
 import useDocSearchStore from "@/stores/useDocSearchStore";
-import {motion} from "framer-motion";
 import {DocumentType} from "@/stores/types";
 import PixelatedImage from "@/components/motion/PixelatedImage";
 import RandomText from "@/components/motion/RandomText";
@@ -21,7 +20,7 @@ export default function SelectedDocumentViewer() {
         }
     }, [selectedDoc]);
 
-    return selectedDoc != null && <div className={"flex items-end w-fit sticky top-20 flex-col gap-10 shrink-0 h-fit"}>
+    return selectedDoc != null && <div className={"flex justify-baseline border items-end w-fit sticky top-0 py-20 flex-col gap-10 shrink-0 h-screen"}>
         {/*{*/}
         {/*    docsStack.map((doc, index) => {*/}
         {/*        const position = docsStack.length - index - 1;*/}
@@ -46,6 +45,5 @@ export default function SelectedDocumentViewer() {
         />
 
         <RandomText text={selectedDoc.title} className={"text-end max-w-40"}/>
-
     </div>
 }

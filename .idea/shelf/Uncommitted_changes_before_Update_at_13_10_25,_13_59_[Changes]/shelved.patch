@@ -1,0 +1,134 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"fd72c67f-9150-4b15-9578-462b074f8549\" name=\"Changes\" comment=\"Update\">\n      <change afterPath=\"$PROJECT_DIR$/frontend/src/components/motion/RandomText.tsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/stores/types.ts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/stores/types.ts\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"TypeScript File\" />\n        <option value=\"TypeScript JSX File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Abdel117&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/Abdel117/fanak.git\",\n    \"accountId\": \"43c5db87-ef58-4f49-ace7-83b0fe1960f1\"\n  }\n}]]></component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"31t7w67Q3jfa9PAxYjXY1QlxGb2\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"JavaScript Debug.Debug Application.executor\": \"Debug\",\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"Node.js.cathegorize.ts.executor\": \"Run\",\n    \"Node.js.ciudadseva-scraper.ts.executor\": \"Run\",\n    \"Node.js.doc-scraper-bot.ts.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"js.debugger.nextJs.config.created.server\": \"true\",\n    \"last_opened_file_path\": \"/home/abdel/trabajo/fanak/frontend/src/assets\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"npm.test.executor\": \"Run\",\n    \"settings.editor.selected.configurable\": \"web-ide.project.structure\",\n    \"ts.external.directory.path\": \"/home/abdel/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/frontend/src/assets\" />\n      <recent name=\"$PROJECT_DIR$/frontend/public/assets\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/frontend/public/assets/covers\" />\n      <recent name=\"$PROJECT_DIR$/frontend/public/assets\" />\n      <recent name=\"$PROJECT_DIR$/frontend/public\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"npm.Next.js: server-side\">\n    <configuration name=\"Debug Application\" type=\"JavascriptDebugType\" uri=\"http://localhost:3000\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Next.js: server-side\" type=\"js.build_tools.npm\">\n      <package-json value=\"$PROJECT_DIR$/frontend/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"dev\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"npm start\" type=\"js.build_tools.npm\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"start\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"test\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\n      <package-json value=\"$PROJECT_DIR$/bot/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"test\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"npm.test\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"fd72c67f-9150-4b15-9578-462b074f8549\" name=\"Changes\" comment=\"\" />\n      <created>1756331750978</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1756331750978</updated>\n      <workItem from=\"1756331752233\" duration=\"45000\" />\n      <workItem from=\"1756331798052\" duration=\"183000\" />\n      <workItem from=\"1756397291940\" duration=\"3483000\" />\n      <workItem from=\"1756422512397\" duration=\"26000\" />\n      <workItem from=\"1756426349649\" duration=\"4508000\" />\n      <workItem from=\"1756945790379\" duration=\"1801000\" />\n      <workItem from=\"1757086911288\" duration=\"4351000\" />\n      <workItem from=\"1757126556317\" duration=\"1737000\" />\n      <workItem from=\"1758197003937\" duration=\"971000\" />\n      <workItem from=\"1758220435396\" duration=\"620000\" />\n      <workItem from=\"1758285105907\" duration=\"5640000\" />\n      <workItem from=\"1758295001045\" duration=\"1740000\" />\n      <workItem from=\"1758317638692\" duration=\"615000\" />\n      <workItem from=\"1758363407544\" duration=\"1956000\" />\n      <workItem from=\"1758386613503\" duration=\"2638000\" />\n      <workItem from=\"1758404886340\" duration=\"3346000\" />\n      <workItem from=\"1758450482300\" duration=\"4763000\" />\n      <workItem from=\"1758470784842\" duration=\"3883000\" />\n      <workItem from=\"1758475485553\" duration=\"11052000\" />\n      <workItem from=\"1758559205669\" duration=\"1406000\" />\n      <workItem from=\"1758563277178\" duration=\"4025000\" />\n      <workItem from=\"1758615287431\" duration=\"12160000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1758626855930</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1758626855930</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Update\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision cea600d45623881bf328ce2fe3e785acda454dfb)
++++ b/.idea/workspace.xml	(date 1760356765572)
+@@ -4,14 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="fd72c67f-9150-4b15-9578-462b074f8549" name="Changes" comment="Update">
+-      <change afterPath="$PROJECT_DIR$/frontend/src/components/motion/RandomText.tsx" afterDir="false" />
++    <list default="true" id="fd72c67f-9150-4b15-9578-462b074f8549" name="Changes" comment="Random text component">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/page.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/CoversBgAnimated.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/stores/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/types.ts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/useDocSearchStore.ts" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -35,12 +29,12 @@
+     &quot;assignee&quot;: &quot;Abdel117&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/Abdel117/fanak.git",
+-    "accountId": "43c5db87-ef58-4f49-ace7-83b0fe1960f1"
+-  }
+-}]]></component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/Abdel117/fanak.git&quot;,
++    &quot;accountId&quot;: &quot;43c5db87-ef58-4f49-ace7-83b0fe1960f1&quot;
++  }
++}</component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 5
+ }</component>
+@@ -49,30 +43,30 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "JavaScript Debug.Debug Application.executor": "Debug",
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "Node.js.cathegorize.ts.executor": "Run",
+-    "Node.js.ciudadseva-scraper.ts.executor": "Run",
+-    "Node.js.doc-scraper-bot.ts.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "main",
+-    "js.debugger.nextJs.config.created.server": "true",
+-    "last_opened_file_path": "/home/abdel/trabajo/fanak/frontend/src/assets",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "npm.test.executor": "Run",
+-    "settings.editor.selected.configurable": "web-ide.project.structure",
+-    "ts.external.directory.path": "/home/abdel/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Debug&quot;,
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;Node.js.cathegorize.ts.executor&quot;: &quot;Run&quot;,
++    &quot;Node.js.ciudadseva-scraper.ts.executor&quot;: &quot;Run&quot;,
++    &quot;Node.js.doc-scraper-bot.ts.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/abdel/trabajo/fanak/frontend/src/assets&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;npm.test.executor&quot;: &quot;Run&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;/home/abdel/proyectos/fanak/frontend/node_modules/typescript/lib&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/frontend/src/assets" />
+@@ -160,6 +154,7 @@
+       <workItem from="1758559205669" duration="1406000" />
+       <workItem from="1758563277178" duration="4025000" />
+       <workItem from="1758615287431" duration="12160000" />
++      <workItem from="1759149152161" duration="67000" />
+     </task>
+     <task id="LOCAL-00001" summary="Update">
+       <option name="closed" value="true" />
+@@ -169,7 +164,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1758626855930</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Random text component">
++      <option name="closed" value="true" />
++      <created>1758705296570</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1758705296570</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -177,6 +180,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Update" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
++    <MESSAGE value="Random text component" />
++    <option name="LAST_COMMIT_MESSAGE" value="Random text component" />
+   </component>
+ </project>
+\ No newline at end of file

@@ -4,7 +4,7 @@ import DocumentGenrePicker from "@/components/home/DocumentGenrePicker";
 
 export default function DocumentSearchSection() {
     return (
-        <div className="flex justify-around">
+        <div className="flex justify-around ">
             <DocumentGenrePicker />
             <DocumentGrid />
             <SelectedDocumentViewer />

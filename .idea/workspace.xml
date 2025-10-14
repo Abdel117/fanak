@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd72c67f-9150-4b15-9578-462b074f8549" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fanak.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_25,_13_59_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_25__13_59__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/DocumentLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/pg/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/pg/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/DocumentSearchSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentSearchSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/SelectedDocumentViewer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/SelectedDocumentViewer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +53,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Abdel117/fanak.git&quot;,
-    &quot;accountId&quot;: &quot;d3f97e99-a606-4e6c-b6fa-1d1256542191&quot;
+    &quot;accountId&quot;: &quot;43c5db87-ef58-4f49-ace7-83b0fe1960f1&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -57,7 +76,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/abdel/trabajo/code-crafters&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/abdel/proyectos/fanak/backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -65,7 +84,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.test.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/abdel/trabajo/fanak/frontend/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/abdel/proyectos/fanak/frontend/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -163,6 +182,8 @@
       <workItem from="1759422075378" duration="4088000" />
       <workItem from="1759489212462" duration="78000" />
       <workItem from="1760099714321" duration="1291000" />
+      <workItem from="1760359254918" duration="42000" />
+      <workItem from="1760370743269" duration="976000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <option name="closed" value="true" />
