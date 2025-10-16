@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd72c67f-9150-4b15-9578-462b074f8549" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fanak.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_25,_13_59_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_25__13_59__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/DocumentLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/Language.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/es/wah1d/fanak/backend/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/DocumentSearchSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentSearchSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/[lang]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/DocumentGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/DocumentGrid.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/home/SelectedDocumentViewer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/SelectedDocumentViewer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,12 +32,12 @@
     &quot;assignee&quot;: &quot;Abdel117&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Abdel117/fanak.git&quot;,
-    &quot;accountId&quot;: &quot;43c5db87-ef58-4f49-ace7-83b0fe1960f1&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Abdel117/fanak.git",
+    "accountId": "d3f97e99-a606-4e6c-b6fa-1d1256542191"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -64,30 +46,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.cathegorize.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.ciudadseva-scraper.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.doc-scraper-bot.ts.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/abdel/proyectos/fanak/backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.test.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/abdel/proyectos/fanak/frontend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.Debug Application.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.cathegorize.ts.executor": "Run",
+    "Node.js.ciudadseva-scraper.ts.executor": "Run",
+    "Node.js.doc-scraper-bot.ts.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/home/abdel/proyectos/fanak/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.test.executor": "Run",
+    "settings.editor.selected.configurable": "web-ide.project.structure",
+    "ts.external.directory.path": "/home/abdel/trabajo/fanak/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
@@ -184,6 +166,7 @@
       <workItem from="1760099714321" duration="1291000" />
       <workItem from="1760359254918" duration="42000" />
       <workItem from="1760370743269" duration="976000" />
+      <workItem from="1760576980040" duration="3389000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <option name="closed" value="true" />
