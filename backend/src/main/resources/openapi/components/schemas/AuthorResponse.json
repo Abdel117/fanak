@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "readOnly": true,
+  "required": [
+    "name",
+    "slug",
+    "country",
+    "bio",
+    "pfpURL"
+  ],
+  "description": "An author representation",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The author name",
+      "example": "Lewis Carroll"
+    },
+    "slug": {
+      "type": "string",
+      "description": "The author unique slug",
+      "example": "lewis-carroll"
+    },
+    "country": {
+      "$ref": "./LangEnum.json",
+      "description": "The author country as a lang"
+    },
+    "bio": {
+      "type": "string",
+      "description": "A short author biography",
+      "example": "Lewis Carroll was an English writer, mathematician, and photographer, best known for his children's books 'Alice's Adventures in Wonderland' and 'Through the Looking-Glass'."
+    },
+    "pfpURL": {
+      "type": "string",
+      "description": "The url from which download the author photo",
+      "example": "https://cdn.fanak.es/api/v1/authors/pfps/lewis-carroll.jpg"
+    }
+  }
+}

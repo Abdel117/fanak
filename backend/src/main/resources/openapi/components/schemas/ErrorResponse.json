@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "readOnly": true,
+  "required": [
+    "message"
+  ],
+  "description": "An error response representation",
+  "properties": {
+    "message": {
+      "type": "string",
+      "description": "The error message",
+      "example": "Document not found"
+    },
+    "code": {
+      "type": "integer",
+      "description": "The error code",
+      "example": 404
+    }
+  }
+}

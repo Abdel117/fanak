@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "readOnly": true,
+  "required": [
+    "pageNumber",
+    "content"
+  ],
+  "description": "An author page representation",
+  "properties": {
+    "size": {
+      "type": "integer",
+      "description": "The number of authors in the page",
+      "example": 20
+    },
+    "pageNumber": {
+      "type": "integer",
+      "description": "The page number",
+      "example": 1
+    },
+    "content": {
+      "type": "array",
+      "description": "The list of authors in the page",
+      "items": {
+        "$ref": "./AuthorResponse.json"
+      }
+    }
+  }
+}

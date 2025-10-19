@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "writeOnly": true,
+  "required": [
+    "name",
+    "bio",
+    "slug",
+    "isDeceased",
+    "bornIn"
+  ],
+  "description": "A create author request representation",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The author name",
+      "example": "Lewis Carroll"
+    },
+    "country": {
+      "type": "string",
+      "description": "The author country as a lang",
+      "example": "EN"
+    },
+    "slug": {
+      "type": "string",
+      "description": "The author unique slug",
+      "example": "lewis-carroll"
+    },
+    "bornIn": {
+      "type": "string",
+      "description": "The author birth date in ISO 8601 format",
+      "example": "1832-01-27"
+    },
+    "diedIn": {
+      "type": "string",
+      "description": "The author death date in ISO 8601 format. If the author is still alive, this field should be null",
+      "example": "1898-01-14"
+    },
+    "bio": {
+      "type": "string",
+      "description": "A short author biography IN ENGLISH",
+      "example": "Lewis Carroll was an English writer, mathematician, and photographer, best known for his children's books 'Alice's Adventures in Wonderland' and 'Through the Looking-Glass'."
+    }
+  }
+}

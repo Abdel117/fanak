@@ -1,0 +1,17 @@
+{
+    "type": "string",
+    "description": "Supported languages",
+    "enum": [
+      "EN",
+      "ES",
+      "FR",
+      "DE",
+      "IT",
+      "PT",
+      "RU",
+      "ZH",
+      "JA",
+      "AR"
+    ],
+    "example": "EN"
+}

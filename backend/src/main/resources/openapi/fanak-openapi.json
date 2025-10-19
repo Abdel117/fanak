@@ -1,0 +1,58 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Fanak Backend API",
+    "summary": "This is the official documentation of Fanak Backend API. Fanak is a platform for reading and sharing short public domain documents.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://fanak.es/api/v1",
+      "description": "Development server"
+    }
+  ],
+  "components": {
+    "responses": {
+      "NotFound": {
+        "description": "Entity not found",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "./components/schemas/ErrorResponse.json"
+            }
+          }
+        }
+      },
+      "Unauthorized": {
+        "description": "Unauthorized access",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "./components/schemas/ErrorResponse.json"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "JWT based authentication"
+      }
+    }
+  },
+  "security": [{ "BearerAuth": [] }],
+  "tags": [
+    {
+      "name": "Authors",
+      "description": "Operations related to authors"
+    },
+    {
+      "name": "Documents",
+      "description": "Operations related to documents"
+    }
+  ],
+  "paths": {}
+}

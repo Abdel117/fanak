@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "readOnly": true,
+  "required": [
+    "name",
+    "author",
+    "slug",
+    "description",
+    "langs",
+    "coverURL",
+    "words",
+    "genres"
+  ],
+  "description": "A document representation",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The document name",
+      "example": "Alice's Adventures in Wonderland"
+    },
+    "author": {
+      "$ref": "./AuthorResponse.json"
+    },
+    "slug": {
+      "type": "string",
+      "description": "The document unique slug",
+      "example": "alice-in-wonderland"
+    },
+    "description": {
+      "type": "string",
+      "description": "A short document description",
+      "example": "Alice in Wonderland is a children's novel by Lewis Carroll about a young girl who falls down a rabbit hole into a fantastical world called Wonderland."
+    },
+    "langs": {
+      "type": "array",
+      "description": "The document available languages",
+      "items": {
+        "$ref": "./LangEnum.json"
+      }
+    },
+    "coverURL": {
+      "type": "string",
+      "description": "The url from which download the document cover",
+      "example": "https://cdn.fanak.es/api/v1/docs/covers/alice-in-wonderland.jpg"
+    },
+    "words": {
+      "type": "integer",
+      "description": "The number of words in the document",
+      "example": 26798
+    },
+    "genres": {
+      "type": "array",
+      "description": "The document genres",
+      "items": {
+        "type": "string",
+        "example": "Fantasy"
+      }
+    }
+  }
+}
